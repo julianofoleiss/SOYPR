@@ -1,6 +1,6 @@
 # SOYPR - Soybean Seed Defect Classification Database
 
-This dataset contains images of 1610 soybean seeds collected from three regions in Paraná, Brazil. Each seed has three images obtained with random rotations, resulting in 4830 images. Seeds are grouped into seven classes: Intact, Cercospora, Greenish, Mechanical Damage, Bug Laceration, Dirty, and Humidity Damage.
+This dataset contains images of 1610 soybean seeds collected from three regions in Paraná, Brazil. Three images were obtained from each seed with random rotations, resulting in 4830 images. Seeds are grouped into seven classes: Intact, Cercospora, Greenish, Mechanical Damage, Bug Laceration, Dirty, and Humidity Damage.
 
 Each fold contains images from seeds that were collected from the same region.
 
@@ -10,7 +10,7 @@ The filename format is XXXX_YYYY_ZZZZ_WWWW.png, where:
 
 * YYYY is the tray id
 
-* ZZZZ is the number of the seed within the tray
+* ZZZZ is the seed number within the tray
 
 * WWWW is the number of the image for that seed. There are three images per seed, so WWWW is 0001, 0002 or 0003.
 
@@ -18,11 +18,11 @@ The filename format is XXXX_YYYY_ZZZZ_WWWW.png, where:
 
 ## Classification of Seed Defect Type
 
-The best F1-score without region-aware partitioning was 95.89% (+-0.3). In this case, seeds from the same regions were allowed to be in both training and testing sets. When enforcing region-aware partitioning, we achieved 85.06% (+-5). Both results were obtained with Vit-Base features and a SVM tuned with the RBF kernel. In both cases, we used three images per seed to make a final decision with the product rule. Without the fusion, considering each image from the each seed independently, the F1-score with region-aware partitioning was 74.74% (+-0.8).
+The best F1-score without region-aware partitioning was 95.89% (+-0.3). In this case, seeds from the same regions were allowed to be in both training and testing sets. When enforcing region-aware partitioning, we achieved 85.06% (+-5). Both results were obtained with Vit-Base features and an SVM tuned with the RBF kernel. In both cases, we used three images per seed to make a final decision with the product rule. Without the fusion, considering each image from each seed independently, the F1-score with region-aware partitioning was 74.74% (+-0.8).
 
 ## Intact vs Defective Seeds
 
-The best result with region-aware partitioning was 99.32% (+-0.2) using Vit-Base features and a SVM tuned with the RBM kernel, making a final decision with the product rule. When each image from each seed was independently classified, the F1-score was 97% (+-0.8).
+The best result with region-aware partitioning was 99.32% (+-0.2) using Vit-Base features and an SVM tuned with the RBM kernel, making a final decision with the product rule. When each image from each seed was independently classified, the F1-score was 97% (+-0.8).
 
 # Acknowledgement
 
