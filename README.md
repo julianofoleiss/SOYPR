@@ -26,9 +26,12 @@ The best result with region-aware partitioning was 99.32% (+-0.2) using Vit-Base
 
 If you use this dataset in research, please cite this paper:
 
-'''
+```bibtex
 @INPROCEEDINGS {bertolini2024,
-    author    = "Gabriel Mariano Lobato Pereira and Juliano Henrique Foleis and Alceu de Souza Britto Jr and Diego Bertolini",
+    author    = "Gabriel Mariano Lobato Pereira
+                    and Juliano Henrique Foleis
+                    and Alceu de Souza Britto Jr
+                    and Diego Bertolini",
     title     = "A Database for Soybean Seed Classification",
     booktitle = "Proceedings of the 37th SIBGRAPI - Conference on Graphics, Patterns and Images",
     year      = "2024",
@@ -36,6 +39,6 @@ If you use this dataset in research, please cite this paper:
     month     = "sep",
     publisher = "IEEE"
 }
-'''
+```
 
 
