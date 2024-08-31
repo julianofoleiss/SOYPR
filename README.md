@@ -1,10 +1,12 @@
 # SOYPR - Soybean Seed Defect Classification Database
 
+This dataset contains images of 1610 soybean seeds collected from three regions in Paraná, Brazil. Each seed has three images obtained with random rotations, resulting in 4830 images. Seeds are grouped into seven classes: Intact, Cercospora, Greenish, Mechanical Damage, Bug Laceration, Dirty, and Humidity Damage.
+
 Each fold contains images from seeds that were collected from the same region.
 
 The filename format is XXXX_YYYY_ZZZZ_WWWW.png, where:
 
-* XXXX is the defect id (0001 is intact, 0002 is cercospora, 0003 is greenish, 0004 is mechanical damage, 0005 is bug laceration, 0006 is dirty, 0007 is humidity damage)
+* XXXX is the defect id (0001 is intact, 0002 is Cercospora, 0003 is greenish, 0004 is mechanical damage, 0005 is bug laceration, 0006 is dirty, 0007 is humidity damage)
 
 * YYYY is the tray id
 
@@ -21,6 +23,10 @@ The best F1-score without region-aware partitioning was 95.89% (+-0.3). In this 
 ## Intact vs Defective Seeds
 
 The best result with region-aware partitioning was 99.32% (+-0.2) using Vit-Base features and a SVM tuned with the RBM kernel, making a final decision with the product rule. When each image from each seed was independently classified, the F1-score was 97% (+-0.8).
+
+# Acknowledgement
+
+This study was partly financed by the Universidade Tecnológica Federal do Paraná - UTFPR and COAMO Agroindustrial Cooperativa. 
 
 # Citation
 
